@@ -1,6 +1,3 @@
-# Visit the Website
-
-[GPS-Spotify](https://gps-spotify.netlify.app)
 
 # Web422A4
 
