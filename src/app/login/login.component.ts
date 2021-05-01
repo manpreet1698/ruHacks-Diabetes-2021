@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
         // store the returned token in local storage as 'access_token'
         localStorage.setItem('access_token',success.token);
         // redirect to the "vehicles" route
-        this.router.navigate(['/not-found']);
+        this.router.navigate(['/landing-page']);
         },
         (err) => {
           this.warning = err.error.message;

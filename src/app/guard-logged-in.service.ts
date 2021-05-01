@@ -19,7 +19,7 @@ export class GuardLoggedInService implements CanActivate {
   canActivate(): boolean {
 
     if (this.auth.isAuthenticated()) {
-      this.router.navigate(['/not-found']);
+      this.router.navigate(['/landing-page']);
       return false;
     }
     return true;

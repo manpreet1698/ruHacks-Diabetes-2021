@@ -24,7 +24,8 @@ import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; 
 import { MatSnackBarModule } from '@angular/material/snack-bar'; 
 import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component'; 
+import { LoginComponent } from './login/login.component';
+import { LandingPageComponent } from './landing-page/landing-page.component'; 
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { LoginComponent } from './login/login.component';
     AboutComponent,
     NotFoundComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
