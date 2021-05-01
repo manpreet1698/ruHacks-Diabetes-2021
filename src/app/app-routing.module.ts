@@ -7,9 +7,11 @@ import { LoginComponent } from './login/login.component';
 import { GuardAuthService } from './guard-auth.service';
 import { GuardLoggedInService } from './guard-logged-in.service';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
 {path: "landing-page", component : LandingPageComponent, canActivate: [GuardAuthService]},  
+{path: "contact", component : ContactComponent, canActivate: [GuardAuthService]},  
 {path: "register", component : RegisterComponent, canActivate: [GuardLoggedInService]},
 {path: "login", component : LoginComponent, canActivate: [GuardLoggedInService]},
 {path: "about", component: AboutComponent, canActivate: [GuardAuthService]},

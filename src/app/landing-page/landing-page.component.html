@@ -1,1 +1,160 @@
-<p>landing-page works!</p>
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap');
+  </style>
+
+  <title>Diabities Tracker</title>
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- HOME PAGE BACKGROUND + INTRO -->
+<!-- <img class=src="https://images.unsplash.com/photo-1593491034932-844ab981ed7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1951&q=80" alt="background-image"> -->
+<div class="hero hero-image">
+  <div class="hero-text">
+    <br><br><br><br>
+    <h1 style="font-size:50px; color: #FF6200;">Diabetes Personal Tracker</h1>
+    <i><p style="color: #1b5e20;">Welcome to the easy way to keep your health in check</p></i>
+    <button id="log-btn">Log!</button>
+  </div>
+</div>
+
+
+<!-- USER INPUT -->
+<section  class="white-section" id="pricing">
+
+  <h2 class="section-heading" style="text-align: center;">Fill Out A New Record:</h2>
+  <br><br>
+
+
+  <div class="row">
+
+    <div class="pricing-column col-lg-4 col-md-6 date-item">
+      <div class="card">
+        <div class="card-header">
+          <h3><b>LEVEL</b></h3>
+        </div>
+        <div class="card-body">
+          <p>Please indicate the result of your sugar level (mg/dL):</p>
+
+          <input style="text-align: center;" type="text" placeholder="Enter Sugar level "id="sugar level">
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6 date-item">
+      <div class="card">
+        <div class="card-header">
+          <h3><b>DATE</b></h3>
+        </div>
+        <div class="card-body">
+          <p>Please indicate the time and the date of the result for the current sugar level you entered:</p>
+          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01"><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 date-item">
+      <div class="card">
+        <div class="card-header">
+          <h3><b>FOOD</b></h3>
+        </div>
+        <div class="card-body">
+          <p>Did you eat when you tested your sugar level?</p>
+          <form action="" method="post">
+            <input type="radio" name="joke" value="Yes" id="yes" /> Yes
+            <input type="radio" name="joke" value="No" id="no"/> No
+          </form>
+          <br>
+          <p>If yes please indicate what you ate:</p>
+          <!-- checklist stuff -->
+          <input type="checkbox" id="carb" style="visibility: visible;">
+          <label class="food-boxes" for="carb" style="visibility: visible;" id="carbLabel">Carbs</label>
+
+          <input type="checkbox" id="protein" style="visibility: visible;">
+          <label class="food-boxes" for="protein" style="visibility: visible;" id="proteinLabel">Protein</label>
+
+          <input type="checkbox" id="fat" style="visibility: visible;">
+          <label class="food-boxes" for="fat" style="visibility: visible;" id="fatLabel">Fats</label>
+
+          <br><br>
+          <p>If No please indicate the time when you last ate:</p>
+          <input style="text-align: center;" type="datetime-local" min="2021-01" id="foodTime"><br>
+
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="submitForm">
+      <b><input style="width:1000px; margin-left:5rem;" class="btn-hover color-1" type="submit" id="submit" style="visibility: visible;"></b>
+    </div>
+
+
+
+
+  </div>
+
+</section>
+
+  <script src="ruHacks.js"></script>
+
+<!-- Container (Contact Section) -->
+<footer>
+
+  <div style="color: white;"class="container">
+    <br>
+    <h3 style="font-family: 'Dela Gothic One', cursive;"class="text-center">CONTACT</h3>
+    <p class="text-center"><em>For any support or questions, please do not hesistate to contact us!</em></p>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+          <p><span class="glyphicon glyphicon-map-marker"></span><b>Guelph, ON</b></p>
+        <p><span class="glyphicon glyphicon-phone"></span><b>Phone:</b> +1 905-888-2232</p>
+        <p><span class="glyphicon glyphicon-envelope"></span><b>Email:</b> diabitiesmedicaltracker@support.com</p>
+        <p><em><strong>Note: </strong> This website is NOT a substitute for medical care.</em></p>
+
+      </div>
+      <div class="col-md-8">
+
+      <form name="contact-form"
+  action="https://formspree.io/f/xleagndk"
+  method="POST"
+>
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="message" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit" onclick="submitForm()">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    </div>
+  </div>
+</footer>
+</body>

@@ -25,7 +25,8 @@ import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar'; 
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { LandingPageComponent } from './landing-page/landing-page.component'; 
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ContactComponent } from './contact/contact.component'; 
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     NotFoundComponent,
     RegisterComponent,
     LoginComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
