@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  userAPIBase: "http://localhost:8080/api"
+  userAPIBase: "https://shielded-atoll-95671.herokuapp.com/api"
 };
 
 /*
