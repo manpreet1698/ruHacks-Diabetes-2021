@@ -128,6 +128,11 @@ h3 {
 .section-heading {
   padding-left: 1rem;
 }
+.submit-button {
+  width: 50rem;
+  margin: auto;
+  padding-bottom: 5rem;
+}
 
 #pricing {
   padding: 100px;
@@ -231,11 +236,6 @@ p {
   text-align: center;
 }
 
-.submitForm {
-  align-items: center;
-  align-content: center;
-}
-
 .btn-hover {
   width: 200px;
   font-size: 16px;
@@ -278,4 +278,11 @@ p {
     #e85a19
   );
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.age-card {
+  padding: 2rem;
+}
+.card {
+  margin: 2rem;
 }

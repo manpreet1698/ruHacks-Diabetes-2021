@@ -1,0 +1,17 @@
+h1 {
+  font-size: 2rem;
+  font-family: "Krona One", sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+p,
+h4 {
+  font-size: 1rem;
+  font-family: "Krona One", sans-serif;
+  padding-left: 1rem;
+}
+
+mat-card {
+  color: red;
+}
