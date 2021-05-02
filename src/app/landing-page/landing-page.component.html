@@ -55,7 +55,7 @@
         <div class="card-body">
           <p>Please indicate the result of your sugar level (mg/dL):</p>
 
-          <input style="text-align: center;" type="text" placeholder="Enter Sugar level "id="sugar level">
+          <input style="text-align: center;" type="text" placeholder="Enter Sugar level "id="sugar level" #sl>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
         </div>
         <div class="card-body">
           <p>Please indicate the time and the date of the result for the current sugar level you entered:</p>
-          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01"><br>
+          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01" #date><br>
         </div>
       </div>
     </div>
@@ -80,24 +80,24 @@
         <div class="card-body">
           <p>Did you eat when you tested your sugar level?</p>
           <form action="" method="post">
-            <input type="radio" name="joke" value="Yes" /> Yes
-            <input type="radio" name="joke" value="No" /> No
+            <input type="radio" name="joke" value="Yes" #yes/> Yes
+            <input type="radio" name="joke" value="No" #no/> No
           </form>
           <br>
           <p>If yes please indicate what you ate:</p>
           <!-- checklist stuff -->
-          <input type="checkbox" id="carb" style="visibility: visible;">
+          <input type="checkbox" id="carb" style="visibility: visible;" #carbs>
           <label class="food-boxes" for="carb" style="visibility: visible;" id="carbLabel">Carbs</label>
 
-          <input type="checkbox" id="protein" style="visibility: visible;">
+          <input type="checkbox" id="protein" style="visibility: visible;" #protein>
           <label class="food-boxes" for="protein" style="visibility: visible;" id="proteinLabel">Protein</label>
 
-          <input type="checkbox" id="fat" style="visibility: visible;">
+          <input type="checkbox" id="fat" style="visibility: visible;" #fat>
           <label class="food-boxes" for="fat" style="visibility: visible;" id="fatLabel">Fats</label>
 
           <br><br>
           <p>If No please indicate the time when you last ate:</p>
-          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01"><br>
+          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01" #time><br>
 
         </div>
       </div>
@@ -106,7 +106,7 @@
   </div>
 </section>
 <section class ="submit-button submitForm">
-  <b><input class="btn-hover color-1 btn-block" type="submit" id="submitCheckList" style="visibility: visible;"></b>
+  <b><input class="btn-hover color-1 btn-block" type="submit" id="submitCheckList" style="visibility: visible;" (click)="getVal(sl, date, yes, no, carbs, protein, fat, time)"></b>
 </section>
 
 <!-- style="width:1000px; margin-left:5rem"; -->
@@ -242,5 +242,3 @@
     </div>
   </div>
 </footer>
-
-
